@@ -296,6 +296,9 @@
   <!-- 子项目管理 -->
   <modules>
   	<module>longshen-msgtw-base</module>
+  	<module>longshen-msgtw-common</module>
+  	<module>longshen-msgtw-rest</module>
+  	<module>longshen-msgtw-filter</module>
   </modules>
   <build>
   <plugins>

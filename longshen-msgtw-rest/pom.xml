@@ -5,6 +5,7 @@
     <artifactId>longshen-msgtw</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>longshen-msgtw-base</artifactId>
-  <name>longshen-msgtw-base</name>
+  <artifactId>longshen-msgtw-rest</artifactId>
+  <name>longshen-msgtw-rest</name>
+  <description>restful服务提供包</description>
 </project>
