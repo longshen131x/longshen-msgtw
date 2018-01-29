@@ -54,7 +54,7 @@
 
 		<rxnetty>0.4.19</rxnetty>
 		<rxnetty-http>0.5.2</rxnetty-http>
-
+      <dubbo_version>2.6.0</dubbo_version>
 
 	</properties>
 	<!-- 子项目公共依赖包 -->
@@ -288,7 +288,11 @@
 				<artifactId>commons-logging</artifactId>
 				<version>${jcl_version}</version>
 			</dependency>
-
+<dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>dubbo</artifactId>
+    <version>${dubbo_version}</version>
+</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -306,6 +310,7 @@
 		<module>longshen-msgtw-rest</module>
 		<module>longshen-msgtw-filter</module>
 		<module>longshen-msgtw-route</module>
+		<module>longshen-msgtw-route-dubbo</module>
 	</modules>
 	<build>
 		<plugins>
