@@ -305,6 +305,7 @@
 		<module>longshen-msgtw-common</module>
 		<module>longshen-msgtw-rest</module>
 		<module>longshen-msgtw-filter</module>
+		<module>longshen-msgtw-route</module>
 	</modules>
 	<build>
 		<plugins>
