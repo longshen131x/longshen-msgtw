@@ -83,7 +83,7 @@ public class DubboRouteService implements IRouteService<GenericService> {
 
 	@Override
 	public GenericService build() throws GtwException {
-
+//应为创建dubbo 请求方需要spring 复用bean  所以创建路径放到
 		return null;
 	}
 
