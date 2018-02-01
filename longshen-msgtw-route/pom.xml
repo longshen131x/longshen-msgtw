@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>com.longshen.gtw</groupId>
 			<artifactId>longshen-msgtw-common</artifactId>
-			<version>${parent.version}</version>
+			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>

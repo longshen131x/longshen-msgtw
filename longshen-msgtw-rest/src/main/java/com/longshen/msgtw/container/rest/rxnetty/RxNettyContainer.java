@@ -8,8 +8,7 @@ import java.util.Map.Entry;
 
 import org.slf4j.MDC;
 
-import com.alibaba.fastjson.TypeReference;
-import com.longshen.msgtw.base.connector.IConnector;
+import com.longshen.msgtw.base.container.IContainer;
 import com.longshen.msgtw.common.Constants;
 import com.longshen.msgtw.common.TradeIdWorker;
 import com.longshen.msgtw.common.utils.NetUtils;
@@ -51,7 +50,7 @@ import rx.functions.Func1;
  */
 @Slf4j
 public abstract class RxNettyContainer<REQ extends GatewayREQ<?>, RES extends GatewayRES<?>>
-		implements IConnector<REQ, RES> {
+		implements IContainer<REQ, RES> {
 
 	IFilterFactory<REQ, RES> filterFactory;
 

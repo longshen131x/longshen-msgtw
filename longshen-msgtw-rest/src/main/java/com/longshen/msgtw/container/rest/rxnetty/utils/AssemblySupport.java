@@ -5,6 +5,7 @@ import com.longshen.msgtw.container.rest.rxnetty.entity.GatewayRES;
 
 import io.netty.handler.codec.http.HttpResponseStatus;
 import lombok.extern.slf4j.Slf4j;
+
 /**
  * 
  * @类描述：静态装配类

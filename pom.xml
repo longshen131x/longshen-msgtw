@@ -54,7 +54,8 @@
 
 		<rxnetty>0.4.19</rxnetty>
 		<rxnetty-http>0.5.2</rxnetty-http>
-      <dubbo_version>2.6.0</dubbo_version>
+		<dubbo_version>2.6.0</dubbo_version>
+		<disconf_version>2.6.36</disconf_version>
 
 	</properties>
 	<!-- 子项目公共依赖包 -->
@@ -288,11 +289,21 @@
 				<artifactId>commons-logging</artifactId>
 				<version>${jcl_version}</version>
 			</dependency>
-<dependency>
-    <groupId>com.alibaba</groupId>
-    <artifactId>dubbo</artifactId>
-    <version>${dubbo_version}</version>
-</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+				<version>${spring-boot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>dubbo</artifactId>
+				<version>${dubbo_version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.baidu.disconf</groupId>
+				<artifactId>disconf-client</artifactId>
+				<version>${disconf_version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -311,6 +322,7 @@
 		<module>longshen-msgtw-filter</module>
 		<module>longshen-msgtw-route</module>
 		<module>longshen-msgtw-route-dubbo</module>
+		<module>longshen-msgtw-dubbo-webapp</module>
 	</modules>
 	<build>
 		<plugins>
@@ -467,10 +479,7 @@
 					<artifactId>maven-gpg-plugin</artifactId>
 					<version>1.4</version>
 				</plugin>
-				<plugin>
-					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>2.10.4</version>
-				</plugin>
+				
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>

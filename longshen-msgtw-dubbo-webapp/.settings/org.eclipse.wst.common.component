@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="longshen-msgtw-dubbo-webapp-0.0.1-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="longshen-msgtw-route-dubbo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/longshen-msgtw-route-dubbo/longshen-msgtw-route-dubbo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="longshen-msgtw-route-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/longshen-msgtw-route/longshen-msgtw-route">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="longshen-msgtw-rest-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/longshen-msgtw-rest/longshen-msgtw-rest">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="longshen-msgtw-base-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/longshen-msgtw-base/longshen-msgtw-base">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="longshen-msgtw-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/longshen-msgtw-common/longshen-msgtw-common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="longshen-msgtw-filter-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/longshen-msgtw-filter/longshen-msgtw-filter">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="longshen-msgtw-dubbo-webapp"/>
+        <property name="java-output-path" value="/longshen-msgtw-dubbo-webapp/target/classes"/>
+    </wb-module>
+</project-modules>
